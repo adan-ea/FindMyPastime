@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">FindMyPastime</string>
+    <string name="app_name">Find My Pastime</string>
+    <string name="button_camera">Lancer la reconnaissance facial</string>
 </resources>
