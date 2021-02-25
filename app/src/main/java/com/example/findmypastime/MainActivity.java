@@ -4,7 +4,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -19,8 +18,8 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     //initialisation des variables
-    ImageView imageView;
-    Button btn_camera;
+    private ImageView imageView;
+    private Button btn_camera;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
