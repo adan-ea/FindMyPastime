@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "653293161981",
+    "project_id": "findmypastimedatabase",
+    "storage_bucket": "findmypastimedatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653293161981:android:4c31ba99cee852f4785d94",
+        "android_client_info": {
+          "package_name": "com.example.findmypastime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653293161981-4t9903krvr6a9su84n0ks52ajbngsrab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findmypastime",
+            "certificate_hash": "2972beefe8cb77b4758a24155d69ecd550e43270"
+          }
+        },
+        {
+          "client_id": "653293161981-db5hnm1kr0j5ttvji1rheh386dogritr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi3stq_IGYGMYiZVwVOMrTO_2b8geRMDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653293161981-db5hnm1kr0j5ttvji1rheh386dogritr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,20 +15,29 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
 
     //initialisation des variables
     private ImageView imageView;
-    private Button btn_camera;
+
+    /* Write a message to the database*/
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("message");
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //Assigner les variables
         imageView = findViewById(R.id.imgAffichePhoto);
-        btn_camera = findViewById(R.id.btn_camera);
+        Button btn_camera = findViewById(R.id.btn_camera);
 
         //Demander la persmission pour la caméra
         if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA)
@@ -39,11 +48,15 @@ public class MainActivity extends AppCompatActivity {
                     }, 100);
         }
         btn_camera.setOnClickListener(new View.OnClickListener(){
+            int i=0;
             @Override
             public void onClick(View view){
-                //Ouvre la caméra
+
+                /*Ouvre la caméra
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-startActivityForResult(intent, 100);
+                startActivityForResult(intent, 100);*/
+                i+=1;
+                myRef.setValue("Hello, Wrld!"+i);
             }
         });
     }
@@ -56,7 +69,6 @@ startActivityForResult(intent, 100);
            Bitmap captureImage = (Bitmap) data.getExtras().get("data");
            //Prend l'image récupérée et la met dans le placeHolder
            imageView.setImageBitmap(captureImage);
-
        }
     }
 }
