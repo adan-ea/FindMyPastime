@@ -2,7 +2,6 @@
 <com.google.android.material.circularreveal.CircularRevealRelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -15,12 +14,13 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="153dp"
         android:layout_marginBottom="19dp"
-        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
         android:text="@string/jeux"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <Button
         android:id="@+id/btn_back"
@@ -33,7 +33,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <ListView
         android:id="@+id/listViewGames"
@@ -43,6 +44,7 @@
         android:layout_alignParentBottom="true"
         android:padding="20dp"
         android:layout_marginStart="-4dp"
-        android:layout_marginBottom="2dp" />
+        android:layout_marginBottom="2dp"
+        />
 
 </com.google.android.material.circularreveal.CircularRevealRelativeLayout>

@@ -16,20 +16,21 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.provider.MediaStore;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.google.android.gms.vision.Frame;
 import com.google.android.gms.vision.face.Face;
 import com.google.android.gms.vision.face.FaceDetector;
+
 import java.io.FileDescriptor;
 import java.io.IOException;
 
@@ -70,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-
 
         prendrePhoto();
         recupPhoto();
@@ -222,5 +222,4 @@ public class MainActivity extends AppCompatActivity {
     public void setNbVisages(int nbVisages) {
         this.nbVisages = nbVisages;
     }
-
 }

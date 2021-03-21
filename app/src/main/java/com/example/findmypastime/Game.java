@@ -3,9 +3,6 @@ package com.example.findmypastime;
 public class Game {
 
     private String gameName;
-
-
-
     private String gameId;
 
     public Game() { }
@@ -18,7 +15,4 @@ public class Game {
     public String getGameName() {
         return gameName;
     }
-
 }
-
-
