@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Find My Pastime</string>
-    <string name="button_camera">Lancer la reconnaissance facial</string>
+    <string name="btn_camera">Prendre une photo</string>
+    <string name="btn_import">Importer une image</string>
+    <string name="btn_jeux_activity">Améliorer notre soirée !</string>
+    <string name="btn_back">retour</string>
     <string name="place_holder">Place holder qui récupère une image</string>
+    <string name="nbVisages">Nombre de visages détéctés : 0</string>
+    <string name="jeux">Jeux conseillés pour 0 personnes : </string>
 </resources>
